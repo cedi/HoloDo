@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lvitem_todo_list"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main.lv_bkgnd_color"
+    android:paddingBottom="@dimen/main.lv_item.padding_bottom"
+    android:paddingLeft="@dimen/main.lv_item.padding_left"
+    android:paddingRight="@dimen/main.lv_item.padding_right"
+    android:paddingTop="@dimen/main.lv_item.padding_top" >
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/main.lv_title_color" />
+
+    <TextView
+        android:id="@+id/textview_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textview_title"
+        android:textColor="@color/main.lv_date_color" />
+
+    <TextView
+        android:id="@+id/textview_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textview_date"
+        android:ellipsize="end"
+        android:lines="1"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/main.lv_note_color" />
+
+    <ImageView
+        android:id="@+id/image_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/priority" />
+
+</RelativeLayout>

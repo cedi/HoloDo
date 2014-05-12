@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/menu.lv_bkgnd_color"
+    android:paddingBottom="@dimen/menu.lv_paddingBottom"
+    android:paddingLeft="@dimen/menu.lv_paddingLeft"
+    android:paddingRight="@dimen/menu.lv_paddingRight"
+    android:paddingTop="@dimen/menu.lv_paddingTop" >
+
+    <TextView
+        android:id="@+id/textView_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/menu.lv_item.title_margin_right"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingBottom="@dimen/menu.lv_item.title_paddingTop"
+        android:paddingTop="@dimen/menu.lv_item.title_paddingBottom"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/main.lv_title_color" />
+
+    <TextView
+        android:id="@+id/textView_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/grey_dark" />
+
+</RelativeLayout>

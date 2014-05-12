@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Farben -->
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#2C2C2C</color>
+    <color name="blue">#5297CB</color>
+    <color name="blue_light">#6AB3E5</color>
+    <color name="blue_light_extra">#B3D8ED</color>
+    <color name="orange_dark">#E5460F</color>
+    <color name="orange_light">#ffbb33</color>
+    <color name="orange_light_extra">#ffe6c8</color>
+    <color name="grey_dark_extra">#AFAFAF</color>
+    <color name="grey_dark">#C2C2C2</color>
+    <color name="grey">#D5D5D5</color>
+    <color name="grey_light">#E3E3E3</color>
+    <color name="grey_light_extra">#F4F4F4</color>
+
+    <!-- TODO: Bei Release wieder auf Orange umbauen -->
+    <color name="list_item_color">@color/white</color>
+
+    <!-- Main Layout -->
+    <color name="main.bkgnd_color">@color/grey_light</color>
+    <color name="main.divider_color">@color/transparent</color>
+    <color name="main.lv_bkgnd_color">@color/list_item_color</color>
+    <color name="main.lv_divider_color">@color/main.bkgnd_color</color>
+    <color name="main.lv_title_color">@color/blue</color>
+    <!-- <color name="main.lv_title_color">@color/black_light</color> -->
+    <color name="main.lv_date_color">@color/grey</color>
+    <color name="main.lv_note_color">@color/grey</color>
+
+    <!-- Menü Layout -->
+    <color name="menu.bkgnd_color">@color/main.bkgnd_color</color>
+    <color name="menu.divider_color">@color/white</color>
+    <color name="menu.lv_bkgnd_color">@color/list_item_color</color>
+    <color name="menu.lv_divider_color">@color/menu.bkgnd_color</color>
+
+    <!-- Detail Layout -->
+    <color name="detail.bkgnd_color">@color/main.bkgnd_color</color>
+    <color name="detail.title.background">@color/blue_light_extra</color>
+    <color name="detail.divider_color">@color/grey_dark_extra</color>
+
+</resources> 

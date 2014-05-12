@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HoloDo</string>
+    <string name="priority">Priorität</string>
+    <string name="reminder_service_name">Erinnerungs Service</string>
+    <string name="list_99">99+</string>
+	<string name="debug_copy_succeed">Kopieren erfolgreich</string>
+    
+    <!-- Default Liste -->
+    <string name="liste_entry">Eingang</string>
+    
+    <!-- Default Strings -->
+    <string name="default_date">Kein Datum</string>
+    <string name="default_remember">Keine Erinnerung</string>
+
+    <!-- ActionBar Einträge -->
+    <string name="action_sort_name_asc">Nach Name aufsteigend</string>
+    <string name="action_sort_name_desc">Nach Name absteigend</string>
+    <string name="action_sort_none">Ohne Sortierung</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_menue">Menü</string>
+    <string name="action_debug_dump_db">Dump DB</string>
+
+    <!-- Button Beschriftungen -->
+    <string name="button_send">Go</string>
+    <string name="button_default_date">Kein Datum</string>
+    <string name="button_default_remember">Keine Erinnerung</string>
+
+    <!-- Hints -->
+    <string name="hint_note">Notiz</string>
+    <string name="hint_place">Ort</string>
+    <string name="hint_new_note">Neuer Task</string>
+    <string name="hint_new_list">Neue Liste</string>
+
+    <!-- Drawer beschriftungen -->
+    <string name="drawer_open">Menü öffnen</string>
+    <string name="drawer_close">Menü schließen</string>
+
+    <!-- TextView beschriftungen -->
+    <string name="tv_date">Datum</string>
+    <string name="tv_remember">Erinnerung</string>
+    <string name="tv_notes">Notizen</string>
+    <string name="tv_place">Ort</string>
+
+    <!-- Dialog beschriftungen -->
+    <string name="dlg_date">Datum</string>
+    <string name="dlg_remember">Erinnerung</string>
+
+    <!-- Fehlermeldungen -->
+    <string name="err_no_empty_title">Der Titel darf nicht leer sein</string>
+    <string name="err_no_empty_list">Der Name darf nicht leer sein</string>
+
+    <!-- Für Contextmenue -->
+    <string name="context_title">\"%s\'s\" Aktionen</string>
+    <string name="context_delete">Löschen</string>
+    <string name="context_move">Verschieben</string>
+    <string name="context_done">Erledigen</string>
+    <string name="context_undone">Fortsetzen</string>
+    <string name="context_open">Öffnen</string>
+    <string name="context_rename">Umbenennen</string>
+
+    <!-- Für Toast -->
+    <string name="toast_delete_succesfull"> erfolgreich gelöscht</string>
+    <string name="toast_task_done"> erledigt</string>
+
+</resources>

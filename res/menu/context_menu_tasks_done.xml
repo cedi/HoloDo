@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/context_open"
+        android:title="@string/context_open"/>
+    
+    <item
+        android:id="@+id/context_done"
+        android:title="@string/context_undone"/>
+    
+    <item
+        android:id="@+id/context_delete"
+        android:title="@string/context_delete"/>
+
+</menu>

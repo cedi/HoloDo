@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Global -->
+    <dimen name="zero">0dp</dimen>
+    <dimen name="drawer_width">320dp</dimen>
+    <dimen name="item_spacing">4dp</dimen>
+    <dimen name="divider_heigth">5dp</dimen>
+    <dimen name="default_padding">16dp</dimen>
+
+    <!-- Main Layout -->
+    <dimen name="main.padding">@dimen/default_padding</dimen>
+    <dimen name="main.btn_add_width">50dp</dimen>
+    <dimen name="main.edit_add_margin_right">54dp</dimen>
+    <dimen name="main.lv_divider_heigth">@dimen/divider_heigth</dimen>
+    <dimen name="main.lv_margin">4dp</dimen>
+    <dimen name="main.lv_items_margin_top">52dp</dimen>
+    <dimen name="main.lv_item.heigth">76dp</dimen>
+    <dimen name="main.lv_item.padding_top">4dp</dimen>
+    <dimen name="main.lv_item.padding_bottom">4dp</dimen>
+    <dimen name="main.lv_item.padding_left">8dp</dimen>
+    <dimen name="main.lv_item.padding_right">16dp</dimen>
+
+    <!-- Menü Layout -->
+    <dimen name="menu.width">@dimen/drawer_width</dimen>
+    <dimen name="menu.padding">@dimen/default_padding</dimen>
+    <dimen name="menu.btn_add_width">50dp</dimen>
+    <dimen name="menu.edit_add_margin_right">54dp</dimen>
+    <dimen name="menu.lv_items_margin_top">52dp</dimen>
+    <dimen name="menu.lv_divider_heigth">@dimen/divider_heigth</dimen>
+    <dimen name="menu.lv_item.heigth">48dp</dimen>
+    <dimen name="menu.lv_item.title_margin_right">24dp</dimen>
+    <dimen name="menu.lv_item.title_paddingTop">2dp</dimen>
+    <dimen name="menu.lv_item.title_paddingBottom">2dp</dimen>
+    <dimen name="menu.lv_margin">4dp</dimen>
+    <dimen name="menu.lv_paddingTop">6dp</dimen>
+    <dimen name="menu.lv_paddingBottom">6dp</dimen>
+    <dimen name="menu.lv_paddingLeft">12dp</dimen>
+    <dimen name="menu.lv_paddingRight">12dp</dimen>
+
+    <!-- Detail Layout -->
+    <dimen name="detail.width">@dimen/drawer_width</dimen>
+    <dimen name="detail.title.layout_heigth">52dp</dimen>
+    <dimen name="detail.title.padding_top">4dp</dimen>
+    <dimen name="detail.title.padding_right">16dp</dimen>
+    <dimen name="detail.title.padding_left">8dp</dimen>
+    <dimen name="detail.title.padding_bottom">4dp</dimen>
+    <dimen name="detail.title.btn_edit_fav_width">48dp</dimen>
+    <dimen name="detail.title.btn_edit_fav_heigth">48dp</dimen>
+    <dimen name="detail.title.edit_title_margin_right">54dp</dimen>
+    <dimen name="detail.title.btn_title_margin_right">54dp</dimen>
+    <dimen name="detail.title.btn_title_margin_left">12dp</dimen>
+    <dimen name="detail.title.edit_title_margin_top">3dp</dimen>
+    <dimen name="detail.title.chbox_margin_top">5dp</dimen>
+    <dimen name="detail.content.padding_right">16dp</dimen>
+    <dimen name="detail.content.padding_left">8dp</dimen>
+    <dimen name="detail.content.margin_top">52dp</dimen>
+    <dimen name="detail.content.divider_height">1dp</dimen>
+    <dimen name="detail.content.btn_date_margin_left">34dp</dimen>
+    <dimen name="detail.content.btn_date_margin_right">54dp</dimen>
+    <dimen name="detail.content.tv_margin_top">4dp</dimen>
+    <dimen name="detail.content.btn_date_margin_top">4dp</dimen>
+    <dimen name="detail.content.btn_remember_margin_top">4dp</dimen>
+    <dimen name="detail.content.btn_remember_margin_right">54dp</dimen>
+    <dimen name="detail.content.edit_note_margin_top">4dp</dimen>
+    <dimen name="detail.content.edit_place_margin_top">4dp</dimen>
+    <dimen name="detail.content.btn_delete_date_margin_top">4dp</dimen>
+    <dimen name="detail.content.btn_delete_date_margin_left">34dp</dimen>
+    <dimen name="detail.content.btn_delete_date_margin_right">54dp</dimen>
+    <dimen name="detail.content.btn_delete_remember_margin_left">34dp</dimen>
+    <dimen name="detail.content.btn_delete_remember_margin_right">54dp</dimen>
+    <dimen name="detail.content.btn_delete_date_width">48dp</dimen>
+    <dimen name="detail.content.btn_delete_remember_width">48dp</dimen>
+    <dimen name="detail.content.btn_delete_remember_margin_top">4dp</dimen>
+
+</resources>

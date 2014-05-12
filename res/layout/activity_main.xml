@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Main Content -->
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/main.bkgnd_color"
+        android:choiceMode="singleChoice"
+        android:divider="@color/main.divider_color"
+        android:dividerHeight="@dimen/zero"
+        android:fitsSystemWindows="true"
+        android:paddingLeft="@dimen/main.padding"
+        android:paddingRight="@dimen/main.padding" >
+
+        <EditText
+            android:id="@+id/add_task_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="@dimen/main.edit_add_margin_right"
+            android:hint="@string/hint_new_note"
+            android:inputType="text"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall" />
+
+        <Button
+            android:id="@+id/button_add_task"
+            android:layout_width="@dimen/main.btn_add_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="onAddTask"
+            android:text="@string/button_send" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/main.lv_items_margin_top"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/todo_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/main.lv_margin"
+                android:layout_marginRight="@dimen/main.lv_margin"
+                android:layout_marginTop="@dimen/main.lv_margin"
+                android:divider="@color/main.lv_divider_color"
+                android:dividerHeight="@dimen/main.lv_divider_heigth"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Menü -->
+
+    <FrameLayout
+        android:id="@+id/menu_drawer"
+        android:layout_width="@dimen/menu.width"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:background="@color/main.bkgnd_color"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="@dimen/zero"
+        android:fitsSystemWindows="true"
+        android:paddingLeft="@dimen/menu.padding"
+        android:paddingRight="@dimen/menu.padding" >
+
+        <EditText
+            android:id="@+id/add_list_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="@dimen/menu.edit_add_margin_right"
+            android:hint="@string/hint_new_list"
+            android:inputType="text"
+            android:minHeight="?android:attr/listPreferredItemHeightSmall" />
+
+        <Button
+            android:id="@+id/button_add_list"
+            android:layout_width="@dimen/menu.btn_add_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="onAddList"
+            android:text="@string/button_send" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/menu.lv_items_margin_top"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/left_drawer_listview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/menu.lv_margin"
+                android:layout_marginRight="@dimen/menu.lv_margin"
+                android:layout_marginTop="@dimen/menu.lv_margin"
+                android:divider="@color/menu.lv_divider_color"
+                android:dividerHeight="@dimen/menu.lv_divider_heigth"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Detailansicht -->
+
+    <RelativeLayout
+        android:id="@+id/detail_drawer"
+        android:layout_width="@dimen/detail.width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@color/detail.bkgnd_color"
+        android:fitsSystemWindows="true" >
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/detail.title.layout_heigth"
+            android:background="@color/detail.title.background"
+            android:fitsSystemWindows="true"
+            android:paddingBottom="@dimen/detail.title.padding_bottom"
+            android:paddingLeft="@dimen/detail.title.padding_left"
+            android:paddingRight="@dimen/detail.title.padding_right"
+            android:paddingTop="@dimen/detail.title.padding_top" >
+
+            <CheckBox
+                android:id="@+id/checkBox_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail.title.chbox_margin_top"
+                android:checked="false" />
+
+            <Button
+                android:id="@+id/button_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail.title.btn_title_margin_left"
+                android:layout_marginRight="@dimen/detail.title.btn_title_margin_right"
+                android:layout_toRightOf="@+id/checkBox_done"
+                android:background="@color/transparent"
+                android:gravity="left|center_vertical"
+                android:onClick="onTitleClicked" />
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/detail.title.edit_title_margin_right"
+                android:layout_marginTop="@dimen/detail.title.edit_title_margin_top"
+                android:layout_toRightOf="@+id/checkBox_done"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/button_edit_fav"
+                android:layout_width="@dimen/detail.title.btn_edit_fav_width"
+                android:layout_height="@dimen/detail.title.btn_edit_fav_heigth"
+                android:layout_alignParentRight="true"
+                android:onClick="onEditFavClicked" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/detail.content.margin_top"
+            android:background="@color/transparent"
+            android:fillViewport="false"
+            android:fitsSystemWindows="true" >
+
+            <RelativeLayout
+                android:id="@+id/content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fitsSystemWindows="true"
+                android:paddingLeft="@dimen/detail.content.padding_left"
+                android:paddingRight="@dimen/detail.content.padding_right" >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/detail.content.tv_margin_top"
+                    android:text="@string/tv_date" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/detail.content.divider_height"
+                    android:layout_alignBottom="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/detail.divider_color"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/button_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginLeft="@dimen/detail.content.btn_date_margin_left"
+                    android:layout_marginRight="@dimen/detail.content.btn_date_margin_right"
+                    android:layout_marginTop="@dimen/detail.content.btn_date_margin_top"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onChangeDate"
+                    android:text="@string/button_default_date" />
+
+                <Button
+                    android:id="@+id/button_delete_date"
+                    android:layout_width="@dimen/detail.content.btn_delete_date_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginTop="@dimen/detail.content.btn_delete_date_margin_top"
+                    android:background="@drawable/ic_action_discard"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onDeleteDate" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_date"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="@string/tv_remember" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/detail.content.divider_height"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/detail.divider_color"
+                    android:orientation="vertical" />
+
+                <Button
+                    android:id="@+id/button_remember"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/button_date"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginRight="@dimen/detail.content.btn_remember_margin_right"
+                    android:layout_marginTop="@dimen/detail.content.btn_remember_margin_top"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onChangeRemember"
+                    android:text="@string/button_default_remember" />
+
+                <Button
+                    android:id="@+id/button_delete_Remember"
+                    android:layout_width="@dimen/detail.content.btn_delete_remember_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginTop="@dimen/detail.content.btn_delete_remember_margin_top"
+                    android:background="@drawable/ic_action_discard"
+                    android:drawSelectorOnTop="true"
+                    android:gravity="left|center_vertical"
+                    android:onClick="onDeleteRemember" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button_remember"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="@string/tv_place" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/detail.content.divider_height"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/detail.divider_color"
+                    android:orientation="vertical" />
+
+                <EditText
+                    android:id="@+id/edit_place"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="@dimen/detail.content.edit_note_margin_top"
+                    android:layout_toRightOf="@+id/textView"
+                    android:hint="@string/hint_place" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_place"
+                    android:layout_gravity="left|center_vertical"
+                    android:text="@string/tv_notes" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/detail.content.divider_height"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/detail.divider_color"
+                    android:orientation="vertical" />
+
+                <EditText
+                    android:id="@+id/edit_note"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="@dimen/detail.content.edit_place_margin_top"
+                    android:layout_toRightOf="@+id/textView"
+                    android:hint="@string/hint_note"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:minLines="1" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
